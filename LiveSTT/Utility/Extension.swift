@@ -10,6 +10,17 @@ import AVFAudio
 import Translation
 
 // MARK: - String
+private extension String {
+    
+    /// 🇦- A的差值（僅在首次存取時實際計算一次，隨後直接複用）
+    static let flagBase: UInt32 = {
+        let regionalIndicatorA = "🇦".unicodeScalars.first!.value   // 0x1F1E6
+        let asciiA = "A".unicodeScalars.first!.value                // 0x41
+        return regionalIndicatorA - asciiA                          // 0x1F1A5
+    }()
+}
+
+// MARK: - String
 extension String {
     
     /// 將二位字母國家代碼轉換為國旗 Emoji (ISO 3166-1)
@@ -17,7 +28,7 @@ extension String {
         
         guard count == 2 else { return self }
         
-        let base: UInt32 = 0x1F1A5
+        let base: UInt32 = String.flagBase
         
         var result = ""
         for char in uppercased() {
