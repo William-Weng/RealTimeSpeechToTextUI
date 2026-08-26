@@ -115,11 +115,12 @@ private extension ContentView {
     /// 開始/停止辨識的按鈕
     /// 
     /// 根據當前是否正在錄音，切換按鈕文字與圖示
+    @ViewBuilder
     var startButton: some View {
         
         let color: Color = viewModel.isRecording ? .red: .blue
         
-        return Button {
+        Button {
             viewModel.toggle()
         } label: {
             Label(

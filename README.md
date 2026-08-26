@@ -51,3 +51,5 @@ https://github.com/user-attachments/assets/d56d1c48-6809-4b19-89de-2138837081c2
 | [WWAudioStreamTranscription](https://github.com/William-Weng/WWAudioStreamTranscription) | 基於 Apple Speech framework 的即時音訊轉文字元件。 |
 | [WWMicrophoneInput](https://github.com/William-Weng/WWMicrophoneInput) | 使用 `AVAudioEngine` 建置的輕量級 iOS 麥克風輸入管理器，提供簡單的 API 來擷取麥克風的 PCM 音訊資料。 |
 
+> 「@Sendable 是編譯器幫你檢查閉包安不安全；actor 是編譯器幫你擋不安全存取，再加上執行期用 queue 保證不會同時改。」
+

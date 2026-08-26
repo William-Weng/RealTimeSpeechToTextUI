@@ -51,3 +51,4 @@ Because this project uses Apple’s Speech framework and the microphone for spee
 | [WWAudioStreamTranscription](https://github.com/William-Weng/WWAudioStreamTranscription) | A real-time audio-stream-to-text component based on Apple’s Speech framework. |
 | [WWMicrophoneInput](https://github.com/William-Weng/WWMicrophoneInput) | A lightweight iOS microphone-input manager built with `AVAudioEngine`, providing a simple API for capturing PCM audio data from the microphone. |
 
+> @Sendable is the compiler checking whether your closure is safe; actor is the compiler blocking unsafe access, plus the runtime using a queue to guarantee no concurrent modifications.
