@@ -61,7 +61,7 @@ struct ContentView: View {
             }
         }
     }
-        
+    
     /// 建立 ContentView
     ///
     /// - Parameters:
@@ -93,7 +93,7 @@ private extension ContentView {
             RoundedRectangle(cornerRadius: 16)
         )
     }
-    
+
     /// 顯示目標語言文字的 View
     ///
     /// 使用 ScrollView 包圍 Text，支援多行顯示與捲動

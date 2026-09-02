@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWAudioStreamTranscription",
       "state" : {
-        "revision" : "baec2782e71b40d6528e80676fef6f4a11fb7656",
-        "version" : "0.5.1"
+        "revision" : "743ade8631cedbde468e899c562665d74641a166",
+        "version" : "0.5.2"
       }
     },
     {
